@@ -6,3 +6,4 @@ function calculateCartPrice(...numbers){
    return sum;
 }
 console.log(calculateCartPrice(23,23,4,5,6,7,3,8));
+
