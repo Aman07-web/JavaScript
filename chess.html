@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Chessboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #eee;
+      }
+
+      .chessboard {
+        display: grid;
+        grid-template-columns: repeat(8, 60px);
+        grid-template-rows: repeat(8, 60px);
+        border: 4px solid #333;
+      }
+
+      .square,
+      .square-rev {
+        width: 60px;
+        height: 60px;
+      }
+
+      .square:nth-child(odd) {
+        background: #f0d9b5; /* light */
+      }
+      .square-rev:nth-child(even) {
+        background: #f0d9b5; /* light */
+      }
+      .square-rev:nth-child(odd) {
+        background: #b58863; /* dark */
+      }
+
+      .square:nth-child(even) {
+        background: #b58863; /* dark */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chessboard">
+      <!-- repeat the above 8x8 = 64 times -->
+      <script>
+        const chess = document.querySelector(".chessboard");
+
+        const oddRow = `<div class="square"></div>`.repeat(8);
+        const evenRow = `<div class="square-rev"></div>`.repeat(8);
+
+        const completeHtml = `${oddRow} ${evenRow}`.repeat(4);
+
+        chess.innerHTML = completeHtml;
+      </script>
+    </div>
+  </body>
+</html>

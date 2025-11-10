@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #eee;
+      }
+      .square {
+        width: 60px;
+        height: 60px;
+      }
+      .chess {
+        display: grid;
+        grid-template-columns: repeat(8, 60px);
+        grid-template-rows: repeat(8, 60px);
+        border: 4px solid #000;
+      }
+      .white {
+        background-color: white;
+      }
+      .black {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chess"></div>
+
+    <script>
+      const ch = document.querySelector(".chess");
+
+      for (let i = 1; i <= 8; i++) {
+        for (let j = 1; j <= 8; j++) {
+          const square = document.createElement("div");
+          square.classList.add("square");
+
+          if ((i + j) % 2 === 0) {
+            square.classList.add("white");
+          } else {
+            square.classList.add("black");
+          }
+
+          ch.appendChild(square);
+        }
+      }
+    </script>
+  </body>
+</html>
