@@ -12,7 +12,7 @@ let b=5
 // comparison operator
 
 console.log("a==b", a==b);
-console.log("a==b", a!=b);
+console.log("a!=b", a!=b);
 
 
 
