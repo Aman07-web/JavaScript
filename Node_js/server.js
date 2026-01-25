@@ -1,2 +1,6 @@
-const server=require('http');
-server.createServer().listen(4800);
+const http = require('http');
+
+http.createServer((req, res) => {
+  res.write("Hello World");
+  res.end();
+}).listen(4800);
