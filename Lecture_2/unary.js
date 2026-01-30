@@ -1,7 +1,7 @@
 // unary operator
 
-let a=4
-let b=5
+// let a=4
+// let b=5
 
 // console.log("a = "+a+ " & "+"b = "+b);
 // console.log("A++ = ",a++);
@@ -11,8 +11,9 @@ let b=5
 
 // comparison operator
 
-console.log("a==b", a==b);
-console.log("a!=b", a!=b);
+// console.log("a==b", a==b);
+// console.log("a!=b", a!=b);
+
 
 
 
