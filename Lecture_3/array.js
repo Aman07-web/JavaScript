@@ -5,13 +5,24 @@
 //     console.log(ar[i]);
 // }
 
-let arr=new Array();  // another way of creating array
-arr[0]="Aman";
-arr[1]=23;
-arr[0]="virat" // changing values
+// let arr=new Array();  // another way of creating array
+// arr[0]="Aman";
+// arr[1]=23;
+// arr[0]="virat" // changing values
+// console.log(arr);
+// delete arr[1]
+// console.log(arr);
+
+let arr=["Ram", "Shyam","Aman","Kuldeep"];
 console.log(arr);
-delete arr[1]
+arr.sort();
 console.log(arr);
+
+arr.reverse();
+console.log(arr);
+
+
+
 
 
 
