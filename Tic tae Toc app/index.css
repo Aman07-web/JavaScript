@@ -37,3 +37,21 @@ body{
     border-radius: 1rem;
     border: none;
 }
+.newbtn{
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgb(16, 15, 15);
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+#msg{
+    font-size: 7vmin;
+    color: rgb(240, 210, 86);
+}
+.hide{
+    display: none;
+}
+.msg-container{
+    height: 30vmin;
+}
