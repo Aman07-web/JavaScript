@@ -30,8 +30,15 @@ boxes.forEach((box)=>{
        checkWinner();
     })
 })
-const show=(winner)=>{
-    
+const disabledbox=()=>{
+    for(let box of boxes){
+        box.disabled=true;
+    }
+}
+const showWinner=(winner)=>{
+   msg.innerText=`congrgrat, winner is ${winner}`;
+   msgContainer.classList.remove("hide");
+   disabledbox();
 }
 const checkWinner = ()=>{
     for (let pattern of winPattern) {
@@ -48,8 +55,8 @@ const checkWinner = ()=>{
 
         if(pos1!="" && pos2!="" && pos3!=""){
             if(pos1===pos2 && pos2===pos3){
-                // console.log("winner",pos1);
-              show(pos1);
+                console.log("winner",pos1);
+              showWinner(pos1);
             }
         }
         

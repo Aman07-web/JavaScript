@@ -28,6 +28,7 @@ body{
   border: none;
   font-size: 8vmin;
   color: rgb(234, 71, 71);
+  background-color: rgb(214, 235, 94);
 }
 #reset-btn{
     padding: 1rem;
@@ -53,5 +54,5 @@ body{
     display: none;
 }
 .msg-container{
-    height: 30vmin;
+    height: 20vmin;
 }
