@@ -7,6 +7,11 @@ function getData(dataId,getNextData){
     },2000)
 }
 
+// callback hell
 getData(2,()=>{
-    getData(3);
+    getData(3,()=>{
+        getData(4,()=>{
+            getData(5);
+        })
+    });
 })
